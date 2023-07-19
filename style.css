@@ -1,0 +1,232 @@
+body {
+    margin:0;
+    padding:0;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: content-box;
+}
+
+/* Navegation bar */
+
+header{
+    width: 100%;
+    height: 60px;
+}
+
+nav{
+    height: 30px;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    padding: 16px;
+}
+
+.container-image {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    width: 80px;
+}
+
+nav .menu {
+    height: 24px;
+    width: 24px;
+    margin-right: 10px; 
+}
+
+.menu:hover{
+    border-radius: 50%;
+    background-color: #3c404314;
+}
+
+nav .avatar{
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+
+.avatar:hover {
+    box-shadow: 0 1px 6px 0px #afb0b3;
+    background-color:#f3f4f5;
+}
+
+nav .links {
+  margin-right: 10px;
+  display: flex;
+  width: 150px;
+  justify-content: space-evenly;
+}
+
+nav .links a{
+    text-decoration: none;
+    color:#202124;
+}
+
+nav .links a:hover {
+    text-decoration: underline;
+  }
+
+  /* Main */
+
+main{
+    /* Agrega margen arriba */
+    margin-top: 15px;
+    /* Centran todo horizontalmente */
+    text-align: center;
+}
+
+main .main-logo{
+    width: 530px;
+    /* Centra el elmento horizontalmente dentro de su contenedor, el 0 dice queno hay espacio entre este elemento y los que estén arriba o abajo */
+    margin: 0 auto; 
+    margin-bottom: 25px;
+}
+
+main .main-logo img{
+    height: 100px;
+}
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+main .main-input-container{
+    width: 525px;
+    border: 1px solid #dfe1e5;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    border: none;
+    width: 500px;
+    height: 40px;
+    outline: none;
+}
+main .main-input-container:hover{
+    box-shadow: 0 1px 6px 0px #202124;
+    border-color: #dfe1e5;
+}
+
+main .main-input .search-icon{
+    background-image: url("https://seekicon.com/free-icon-download/search_20.svg");
+   /* Evitar repeticiones */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 14px;
+    height: 14px;
+    padding-left: 6%;
+}
+
+main .main-input .micro-icon{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png");
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-left: 1%;
+}
+
+main .main-input .cam-icon{
+    background-image: url("https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg");
+    width: 17px;
+    height: 17px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-right: 8%;
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button{
+    border: none;
+    height: 35px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 4px;
+    padding: 0 15px;
+    border: 1px solid #f8f9fa;
+    margin-right: 10px;
+}
+
+main .main-buttons button:hover{
+    box-shadow:0 1px 3px rgba(0,0,0,.1);
+    /* Border del botón */
+    border: 1px solid #dadce0;
+    color:#202124;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    height: 85px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(245, 244, 243);
+    align-items: center;
+    border-top: 10px solid rgb(245, 244, 243);
+    font-size: 14px
+}
+
+hr{
+    border: 0 none rgba(209,209,209);
+    border-top: 1px solid rgba(209,209,209);
+    height: 1px;
+    margin: 5px 0;
+}
+
+  footer ul{
+    margin: 12px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+  }
+
+  footer .footer-left{
+    justify-content: left;
+  }
+
+.footer-left a{
+    text-decoration: none;
+  }
+
+  .footer-left a:hover{
+    text-decoration: underline;
+  }
+  
+  footer .footer-right{
+    justify-content: right;
+  }
+
+  .footer-right a{
+    text-decoration: none;
+  }
+
+  .footer-right a:hover{
+    text-decoration: underline;
+  }
+
+  footer span {
+    color: #75797c;
+    margin: 30px;
+  }
+
+  footer ul li a{
+    margin: 25px;
+    color: #75797c;
+  }
